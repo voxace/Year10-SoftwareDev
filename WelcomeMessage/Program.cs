@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace WelcomeMessage
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-		}
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hi " + name + ", welcome to my program!");
+            Console.ReadLine();
+        }
+    }
 }
