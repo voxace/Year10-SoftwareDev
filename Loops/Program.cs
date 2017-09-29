@@ -16,6 +16,17 @@ namespace Loops
                     Console.WriteLine(i);
                 }
 
+                // Nested FOR Loops
+                Console.WriteLine("\nNested FOR Loops: ");
+                for (int x = 0; x < 5; x++)
+                {
+                    for (int y = 0; y <= x; y++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+
                 // WHILE Loop
                 Console.WriteLine("\nWHILE Loop:");
                 int j = 1;
