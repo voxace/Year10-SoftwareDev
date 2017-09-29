@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickADoor", "PickADoor\Pick
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeProgram", "AgeProgram\AgeProgram.csproj", "{0F420682-BFC4-4645-AA12-F0E465804130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{B2C64F23-29D0-49CA-A9A8-50B09CBDB6D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0F420682-BFC4-4645-AA12-F0E465804130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F420682-BFC4-4645-AA12-F0E465804130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F420682-BFC4-4645-AA12-F0E465804130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C64F23-29D0-49CA-A9A8-50B09CBDB6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C64F23-29D0-49CA-A9A8-50B09CBDB6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C64F23-29D0-49CA-A9A8-50B09CBDB6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C64F23-29D0-49CA-A9A8-50B09CBDB6D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
