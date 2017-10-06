@@ -40,23 +40,27 @@ namespace InsultGenerator
 
         private static string GetAdjective(Random rnd)
         {
-            string[] adjectives = {"a hairy", "an obnoxious", "a smelly", "a crusty",
-                                   "an arrogant", "a funky", "a lame", "a stinky"};
-            return adjectives[rnd.Next(8)];
+            string[] adjectives = {"a hairy", "an obnoxious", "a smelly", "a crusty", "a thoughtless",
+                                   "an arrogant", "a funky", "a lame", "a stinky", "a vulgar",
+                                   "a slimy", "a silly", "a weedy", "a warped", "an untalented" };
+            return adjectives[rnd.Next(15)];
         }
 
         private static string GetCompoundAdjective(Random rnd)
         {
             string[] compoundAdjectives = {"no-good", "self-loathing", "Trump-loving", "big-headed",
-                                           "foul-mouthed", "cold-hearted", "pimply-faced", "rage-inducing"};
-            return compoundAdjectives[rnd.Next(8)];
+                                           "foul-mouthed", "cold-hearted", "pimply-faced", "rage-inducing",
+                                           "nerve-racking", "weird-smelling", "heavy-breathing", "self-centred",
+                                           "slow-moving", "close-minded", "free-loading", "diaper-wearing"};
+            return compoundAdjectives[rnd.Next(16)];
         }
 
         private static string GetObject(Random rnd)
         {
             string[] objects = {"turtle", "crab", "child", "sloth", "monkey", "stormtrooper",
-                                "ice cream", "nugget", "simpleton", "lunatic", "dirtbag"};
-            return objects[rnd.Next(11)];
+                                "troll", "nugget", "simpleton", "lunatic", "dirtbag", "grub",
+                                "snot-gobbler", "maggot", "weirdo", "rat", "dog", "nerd", "loner" };
+            return objects[rnd.Next(19)];
         }
     }
 }
