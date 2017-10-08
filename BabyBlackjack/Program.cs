@@ -22,32 +22,15 @@ namespace BabyBlackjack
             Menu(ref money);
         }
 
-        private static void Menu(ref float money)
-        {
-            Console.Write("Would you like another game? y/n: ");
-            if (Console.ReadLine() == "y")
-            {
-                playGame(ref money);
-            }          
-        }
-
-        private static void PayOut(bool playerWins, float betAmount, ref float money)
-        {
-            if(playerWins)
-            {
-                money = money + (betAmount * 2);
-            }
-        }
-
         private static float MakeBet(ref float money)
         {
             float betAmount = 0;
             bool validBet = false;
-            
+
             Console.WriteLine("Enter your bet. You have $" + money);
 
             while (validBet != true)
-            {                
+            {
                 validBet = float.TryParse(Console.ReadLine(), out betAmount);
 
                 if (betAmount > money)
@@ -63,7 +46,7 @@ namespace BabyBlackjack
             }
 
             money = money - betAmount;
-            return betAmount;          
+            return betAmount;
         }
 
         private static int DealCards(Random rnd, string player)
@@ -77,12 +60,12 @@ namespace BabyBlackjack
 
         private static bool determineWinner(int player, int dealer)
         {
-            if(player > dealer)
+            if (player > dealer)
             {
                 Console.WriteLine("You Win!");
                 return true;
             }
-            else if(player < dealer)
+            else if (player < dealer)
             {
                 Console.WriteLine("You Lose!");
                 return false;
@@ -93,5 +76,22 @@ namespace BabyBlackjack
                 return false;
             }
         }
+
+        private static void PayOut(bool playerWins, float betAmount, ref float money)
+        {
+            if (playerWins)
+            {
+                money = money + (betAmount * 2);
+            }
+        }
+
+        private static void Menu(ref float money)
+        {
+            Console.Write("Would you like another game? y/n: ");
+            if (Console.ReadLine() == "y")
+            {
+                playGame(ref money);
+            }          
+        }        
     }
 }
